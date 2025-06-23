@@ -63,7 +63,7 @@ jobs:
       - name: Get Syncthing version
         id: get-version
         run: |
-          version=$(go run build.go version)
+          version=v1.29.7-bonkiversion
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "Version: $version"
 
