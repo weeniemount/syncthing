@@ -360,7 +360,7 @@ func (f *FolderConfiguration) SharedWith(device protocol.DeviceID) bool {
 }
 
 func (f *FolderConfiguration) CheckAvailableSpace(req uint64) error {
-	val := f.MinDiskFree.BaseValue()
+	/*val := f.MinDiskFree.BaseValue()
 	if val <= 0 {
 		return nil
 	}
@@ -371,7 +371,7 @@ func (f *FolderConfiguration) CheckAvailableSpace(req uint64) error {
 	}
 	if err := checkAvailableSpace(req, f.MinDiskFree, usage); err != nil {
 		return fmt.Errorf("insufficient space in folder %v (%v): %w", f.Description(), fs.URI(), err)
-	}
+	}*/
 	return nil
 }
 
