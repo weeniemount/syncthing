@@ -353,7 +353,6 @@ func (f *folder) getHealthErrorWithoutIgnores() error {
 		return err
 	}*/
 
-
 	/*if minFree := f.model.cfg.Options().MinHomeDiskFree; minFree.Value > 0 {
 		dbPath := locations.Get(locations.Database)
 		if usage, err := fs.NewFilesystem(fs.FilesystemTypeBasic, dbPath).Usage("."); err == nil {
