@@ -22,7 +22,6 @@ import (
 	"github.com/syncthing/syncthing/lib/events"
 	"github.com/syncthing/syncthing/lib/fs"
 	"github.com/syncthing/syncthing/lib/ignore"
-	"github.com/syncthing/syncthing/lib/locations"
 	"github.com/syncthing/syncthing/lib/osutil"
 	"github.com/syncthing/syncthing/lib/protocol"
 	"github.com/syncthing/syncthing/lib/scanner"
@@ -346,7 +345,7 @@ func (f *folder) getHealthErrorAndLoadIgnores() error {
 
 func (f *folder) getHealthErrorWithoutIgnores() error {
 	// i hate this error so much
-	
+
 	// Check for folder errors, with the most serious and specific first and
 	// generic ones like out of space on the home disk later.
 
