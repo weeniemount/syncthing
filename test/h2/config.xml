@@ -102,7 +102,7 @@
         <progressUpdateIntervalS>5</progressUpdateIntervalS>
         <limitBandwidthInLan>true</limitBandwidthInLan>
         <minHomeDiskFree unit="%">1</minHomeDiskFree>
-        <releasesURL>https://upgrades.syncthing.net/meta.json</releasesURL>
+        <releasesURL>https://noupdatesforrightnowlmfao.sitethatdefinitelyexists.lmfao</releasesURL>
         <overwriteRemoteDeviceNamesOnConnect>false</overwriteRemoteDeviceNamesOnConnect>
         <tempIndexMinBlocks>10</tempIndexMinBlocks>
         <trafficClass>0</trafficClass>
