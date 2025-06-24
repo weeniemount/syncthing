@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/syncthing/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/db"
 	"github.com/thejerf/suture/v4"
 )
 

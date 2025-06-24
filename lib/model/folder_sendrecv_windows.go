@@ -11,7 +11,7 @@ import (
 	"os/user"
 	"strings"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func (f *sendReceiveFolder) syncOwnership(file *protocol.FileInfo, path string) error {

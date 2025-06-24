@@ -7,7 +7,7 @@
 package events
 
 import (
-	liblogger "github.com/syncthing/syncthing/lib/logger"
+	liblogger "github.com/weeniemount/syncthing/lib/logger"
 )
 
 var dl = liblogger.DefaultLogger.NewFacility("events", "Event generation and logging")

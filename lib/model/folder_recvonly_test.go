@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/scanner"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/scanner"
 )
 
 func TestRecvOnlyRevertDeletes(t *testing.T) {

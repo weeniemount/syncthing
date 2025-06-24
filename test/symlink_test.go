@@ -14,10 +14,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/rc"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/rc"
 )
 
 func TestSymlinks(t *testing.T) {

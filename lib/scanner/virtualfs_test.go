@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type infiniteFS struct {

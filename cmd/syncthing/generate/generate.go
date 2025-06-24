@@ -14,13 +14,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/locations"
-	"github.com/syncthing/syncthing/lib/logger"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/syncthing"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/locations"
+	"github.com/weeniemount/syncthing/lib/logger"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/syncthing"
 )
 
 type CLI struct {

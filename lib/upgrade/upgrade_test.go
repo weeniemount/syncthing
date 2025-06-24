@@ -15,7 +15,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/build"
 )
 
 var versions = []struct {

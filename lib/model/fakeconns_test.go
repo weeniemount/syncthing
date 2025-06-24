@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/timeutil"
-	"github.com/syncthing/syncthing/lib/protocol"
-	protocolmocks "github.com/syncthing/syncthing/lib/protocol/mocks"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/scanner"
+	"github.com/weeniemount/syncthing/internal/timeutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	protocolmocks "github.com/weeniemount/syncthing/lib/protocol/mocks"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/scanner"
 )
 
 type downloadProgressMessage struct {

@@ -10,7 +10,7 @@ import (
 	stdsync "sync"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 	"github.com/thejerf/suture/v4"
 )
 

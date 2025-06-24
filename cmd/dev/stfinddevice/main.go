@@ -16,11 +16,11 @@ import (
 	"os"
 	"time"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/discover"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/protocol"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/discover"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 var timeout = 5 * time.Second

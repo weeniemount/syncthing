@@ -10,7 +10,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type errorFilesystem struct {

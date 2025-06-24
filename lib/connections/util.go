@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/syncthing/syncthing/lib/nat"
-	"github.com/syncthing/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/nat"
+	"github.com/weeniemount/syncthing/lib/osutil"
 )
 
 func fixupPort(uri *url.URL, defaultPort int) *url.URL {

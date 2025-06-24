@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func TestDialQueueSort(t *testing.T) {

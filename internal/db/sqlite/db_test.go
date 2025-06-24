@@ -17,11 +17,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/internal/timeutil"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/internal/timeutil"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 const (

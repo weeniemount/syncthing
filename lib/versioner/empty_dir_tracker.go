@@ -11,7 +11,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/syncthing/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/fs"
 )
 
 type emptyDirTracker map[string]struct{}

@@ -14,12 +14,12 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/gen/apiproto"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/gen/apiproto"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 type tokenManager struct {

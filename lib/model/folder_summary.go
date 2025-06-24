@@ -18,12 +18,12 @@ import (
 
 	"github.com/thejerf/suture/v4"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/svcutil"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/svcutil"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 type FolderSummaryService interface {

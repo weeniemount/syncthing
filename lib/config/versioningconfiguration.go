@@ -12,7 +12,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/syncthing/syncthing/lib/structutil"
+	"github.com/weeniemount/syncthing/lib/structutil"
 )
 
 // VersioningConfiguration is used in the code and for JSON serialization

@@ -23,10 +23,10 @@ import (
 
 	"golang.org/x/net/http2"
 
-	"github.com/syncthing/syncthing/lib/connections/registry"
-	"github.com/syncthing/syncthing/lib/dialer"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/connections/registry"
+	"github.com/weeniemount/syncthing/lib/dialer"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type globalClient struct {

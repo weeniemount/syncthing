@@ -48,10 +48,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/dialer"
-	"github.com/syncthing/syncthing/lib/nat"
-	"github.com/syncthing/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/dialer"
+	"github.com/weeniemount/syncthing/lib/nat"
+	"github.com/weeniemount/syncthing/lib/osutil"
 )
 
 func init() {

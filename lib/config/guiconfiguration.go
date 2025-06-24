@@ -15,7 +15,7 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/syncthing/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/rand"
 )
 
 type GUIConfiguration struct {

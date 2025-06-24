@@ -11,7 +11,7 @@ import (
 	"io"
 	"time"
 
-	stblob "github.com/syncthing/syncthing/internal/blob"
+	stblob "github.com/weeniemount/syncthing/internal/blob"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/blob"

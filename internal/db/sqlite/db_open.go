@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/db"
 )
 
 const maxDBConns = 16

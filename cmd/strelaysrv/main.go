@@ -21,17 +21,17 @@ import (
 
 	"golang.org/x/time/rate"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/nat"
-	"github.com/syncthing/syncthing/lib/osutil"
-	_ "github.com/syncthing/syncthing/lib/pmp"
-	syncthingprotocol "github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/relay/protocol"
-	"github.com/syncthing/syncthing/lib/tlsutil"
-	_ "github.com/syncthing/syncthing/lib/upnp"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/nat"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	_ "github.com/weeniemount/syncthing/lib/pmp"
+	syncthingprotocol "github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/relay/protocol"
+	"github.com/weeniemount/syncthing/lib/tlsutil"
+	_ "github.com/weeniemount/syncthing/lib/upnp"
 )
 
 var (

@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/ignore/ignoreresult"
+	"github.com/weeniemount/syncthing/lib/ignore/ignoreresult"
 )
 
 func TestCache(t *testing.T) {

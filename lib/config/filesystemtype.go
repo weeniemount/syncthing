@@ -6,7 +6,7 @@
 
 package config
 
-import "github.com/syncthing/syncthing/lib/fs"
+import "github.com/weeniemount/syncthing/lib/fs"
 
 type FilesystemType string
 

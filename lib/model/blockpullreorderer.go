@@ -9,9 +9,9 @@ package model
 import (
 	"slices"
 
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/rand"
 )
 
 type blockPullReorderer interface {

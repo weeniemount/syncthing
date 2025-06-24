@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/build"
 )
 
 func (fi basicFileInfo) InodeChangeTime() time.Time {

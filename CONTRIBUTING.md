@@ -1,7 +1,7 @@
 ## Reporting Bugs
 
 Please file bugs in the [GitHub Issue
-Tracker](https://github.com/syncthing/syncthing/issues). Include at
+Tracker](https://github.com/weeniemount/syncthing/issues). Include at
 least the following:
 
  - What happened

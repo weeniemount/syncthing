@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"iter"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func (s *folderDB) GetDeviceFile(device protocol.DeviceID, file string) (protocol.FileInfo, bool, error) {

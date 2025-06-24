@@ -20,11 +20,11 @@ import (
 	"github.com/gobwas/glob"
 	"golang.org/x/text/unicode/norm"
 
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/ignore/ignoreresult"
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/ignore/ignoreresult"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 // A ParseError signifies an error with contents of an ignore file,

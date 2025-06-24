@@ -11,10 +11,10 @@ import (
 	"iter"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/lib/model"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/stats"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/lib/model"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/stats"
 )
 
 // Internals allows access to a subset of functionality in model.Model. While intended for use from applications that import

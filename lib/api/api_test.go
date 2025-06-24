@@ -27,27 +27,27 @@ import (
 	"github.com/d4l3k/messagediff"
 	"github.com/thejerf/suture/v4"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/db/sqlite"
-	"github.com/syncthing/syncthing/lib/assets"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/config"
-	connmocks "github.com/syncthing/syncthing/lib/connections/mocks"
-	discovermocks "github.com/syncthing/syncthing/lib/discover/mocks"
-	"github.com/syncthing/syncthing/lib/events"
-	eventmocks "github.com/syncthing/syncthing/lib/events/mocks"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/locations"
-	"github.com/syncthing/syncthing/lib/logger"
-	loggermocks "github.com/syncthing/syncthing/lib/logger/mocks"
-	"github.com/syncthing/syncthing/lib/model"
-	modelmocks "github.com/syncthing/syncthing/lib/model/mocks"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/svcutil"
-	"github.com/syncthing/syncthing/lib/sync"
-	"github.com/syncthing/syncthing/lib/tlsutil"
-	"github.com/syncthing/syncthing/lib/ur"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/db/sqlite"
+	"github.com/weeniemount/syncthing/lib/assets"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/config"
+	connmocks "github.com/weeniemount/syncthing/lib/connections/mocks"
+	discovermocks "github.com/weeniemount/syncthing/lib/discover/mocks"
+	"github.com/weeniemount/syncthing/lib/events"
+	eventmocks "github.com/weeniemount/syncthing/lib/events/mocks"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/locations"
+	"github.com/weeniemount/syncthing/lib/logger"
+	loggermocks "github.com/weeniemount/syncthing/lib/logger/mocks"
+	"github.com/weeniemount/syncthing/lib/model"
+	modelmocks "github.com/weeniemount/syncthing/lib/model/mocks"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/svcutil"
+	"github.com/weeniemount/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/tlsutil"
+	"github.com/weeniemount/syncthing/lib/ur"
 )
 
 var (
@@ -448,7 +448,7 @@ func TestAPIServiceRequests(t *testing.T) {
 // content type, and result prefix.
 func testHTTPRequest(t *testing.T, baseURL string, tc httpTestCase, apikey string) {
 	// Since running tests in parallel, the previous 1s timeout proved to be too short.
-	// https://github.com/syncthing/syncthing/issues/9455
+	// https://github.com/weeniemount/syncthing/issues/9455
 	timeout := 10 * time.Second
 	if tc.Timeout > 0 {
 		timeout = tc.Timeout

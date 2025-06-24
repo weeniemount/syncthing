@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 const defaultNumConnections = 3 // number of connections to use by default

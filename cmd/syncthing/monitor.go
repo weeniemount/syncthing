@@ -19,12 +19,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/locations"
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/svcutil"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/locations"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/svcutil"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 var (
@@ -263,7 +263,7 @@ func copyStderr(stderr io.Reader, dst io.Writer) {
 *********************************************************************************
 `)
 			} else {
-				l.Warnln("Please check for existing issues with similar panic message at https://github.com/syncthing/syncthing/issues/")
+				l.Warnln("Please check for existing issues with similar panic message at https://github.com/weeniemount/syncthing/issues/")
 				l.Warnln("If no issue with similar panic message exists, please create a new issue with the panic log attached")
 			}
 

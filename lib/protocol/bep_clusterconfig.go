@@ -9,7 +9,7 @@ package protocol
 import (
 	"fmt"
 
-	"github.com/syncthing/syncthing/internal/gen/bep"
+	"github.com/weeniemount/syncthing/internal/gen/bep"
 )
 
 type Compression = bep.Compression

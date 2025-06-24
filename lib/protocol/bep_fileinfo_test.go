@@ -10,7 +10,7 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/build"
 )
 
 func TestLocalFlagBits(t *testing.T) {

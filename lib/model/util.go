@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/syncthing/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/fs"
 )
 
 // inWritableDir calls fn(path), while making sure that the directory

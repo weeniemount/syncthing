@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/gen/discosrv"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/stringutil"
+	"github.com/weeniemount/syncthing/internal/gen/discosrv"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/stringutil"
 )
 
 // announcement is the format received from and sent to clients

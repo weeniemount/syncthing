@@ -12,9 +12,9 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/signature"
-	"github.com/syncthing/syncthing/lib/upgrade"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/signature"
+	"github.com/weeniemount/syncthing/lib/upgrade"
 )
 
 func main() {

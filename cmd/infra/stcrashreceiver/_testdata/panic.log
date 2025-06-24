@@ -4,26 +4,26 @@ panic: runtime error: invalid memory address or nil pointer dereference
 [signal SIGSEGV: segmentation violation code=0x1 addr=0x18 pc=0x457922a]
 
 goroutine 171 [running]:
-github.com/syncthing/syncthing/lib/connections.(*service).setConnectionStatus(0xc0001a80e0, 0xc001b01020, 0x1a, 0x4b2b0a0, 0xc000021270)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:689 +0x3a
-github.com/syncthing/syncthing/lib/connections.(*service).dialParallel.func1(0xc0001a80e0, 0xc0034bf3e0, 0xc003d18510, 0xc001b01020, 0x1a, 0x4b32080, 0xc003d98da0, 0xa, 0xc000b88c80, 0x303a58f8b941897c, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:838 +0xec
-created by github.com/syncthing/syncthing/lib/connections.(*service).dialParallel
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:836 +0x446
+github.com/weeniemount/syncthing/lib/connections.(*service).setConnectionStatus(0xc0001a80e0, 0xc001b01020, 0x1a, 0x4b2b0a0, 0xc000021270)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:689 +0x3a
+github.com/weeniemount/syncthing/lib/connections.(*service).dialParallel.func1(0xc0001a80e0, 0xc0034bf3e0, 0xc003d18510, 0xc001b01020, 0x1a, 0x4b32080, 0xc003d98da0, 0xa, 0xc000b88c80, 0x303a58f8b941897c, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:838 +0xec
+created by github.com/weeniemount/syncthing/lib/connections.(*service).dialParallel
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:836 +0x446
 
 goroutine 1 [chan receive]:
 main.(*exiter).waitForExit(...)
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:289
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:289
 main.syncthingMain(0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x4880b34, 0x1, 0x0, 0x0, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:928 +0x2213
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:928 +0x2213
 main.main()
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:430 +0x406
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:430 +0x406
 
 goroutine 35 [select]:
-github.com/syncthing/syncthing/lib/events.(*Logger).Serve(0xc0000c0120)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:260 +0x126
-created by github.com/syncthing/syncthing/lib/events.init.1
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:234 +0x5b
+github.com/weeniemount/syncthing/lib/events.(*Logger).Serve(0xc0000c0120)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:260 +0x126
+created by github.com/weeniemount/syncthing/lib/events.init.1
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:234 +0x5b
 
 goroutine 19 [syscall]:
 os/signal.signal_recv(0x0)
@@ -48,8 +48,8 @@ created by github.com/syncthing/notify.init.1
 	/Users/jb/go/pkg/mod/github.com/syncthing/notify@v0.0.0-20181107104724-4e389ea6c0d8/watcher_fsevents_cgo.go:63 +0x4e
 
 goroutine 39 [chan receive]:
-github.com/syncthing/syncthing/lib/discover.(*globalClient).Serve(0xc000246150)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/global.go:190 +0x225
+github.com/weeniemount/syncthing/lib/discover.(*globalClient).Serve(0xc000246150)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/global.go:190 +0x225
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470f00, 0xc000000002, 0x5788660, 0xc000246150)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -57,15 +57,15 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 
 goroutine 50 [chan receive]:
 main.setupSignalHandling.func2(0xc0002205a0)
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:959 +0x38
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:959 +0x38
 created by main.setupSignalHandling
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:958 +0x160
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:958 +0x160
 
 goroutine 26 [chan receive]:
 main.setupSignalHandling.func1(0xc000220540)
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:949 +0x38
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:949 +0x38
 created by main.setupSignalHandling
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:948 +0xb2
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:948 +0xb2
 
 goroutine 51 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc000268000)
@@ -74,16 +74,16 @@ created by github.com/thejerf/suture.(*Supervisor).ServeBackground
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:407 +0x3f
 
 goroutine 53 [chan receive]:
-github.com/syncthing/syncthing/lib/events.(*bufferedSubscription).pollingLoop(0xc000282050)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:441 +0x8d
-created by github.com/syncthing/syncthing/lib/events.NewBufferedSubscription
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:436 +0x157
+github.com/weeniemount/syncthing/lib/events.(*bufferedSubscription).pollingLoop(0xc000282050)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:441 +0x8d
+created by github.com/weeniemount/syncthing/lib/events.NewBufferedSubscription
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:436 +0x157
 
 goroutine 54 [chan receive]:
-github.com/syncthing/syncthing/lib/events.(*bufferedSubscription).pollingLoop(0xc0002820f0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:441 +0x8d
-created by github.com/syncthing/syncthing/lib/events.NewBufferedSubscription
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:436 +0x157
+github.com/weeniemount/syncthing/lib/events.(*bufferedSubscription).pollingLoop(0xc0002820f0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:441 +0x8d
+created by github.com/weeniemount/syncthing/lib/events.NewBufferedSubscription
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:436 +0x157
 
 goroutine 5 [select]:
 github.com/syndtr/goleveldb/leveldb/util.(*BufferPool).drain(0xc0001a8000)
@@ -150,20 +150,20 @@ runtime.goparkunlock(...)
 	/usr/local/go/src/runtime/proc.go:307
 time.Sleep(0x45d964b800)
 	/usr/local/go/src/runtime/time.go:105 +0x159
-github.com/syncthing/syncthing/lib/model.(*deadlockDetector).Watch.func1(0xc0000a0d90, 0x570e6a0, 0xc000146800, 0x48817ae, 0x4)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/util.go:35 +0x58
-created by github.com/syncthing/syncthing/lib/model.(*deadlockDetector).Watch
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/util.go:33 +0xb2
+github.com/weeniemount/syncthing/lib/model.(*deadlockDetector).Watch.func1(0xc0000a0d90, 0x570e6a0, 0xc000146800, 0x48817ae, 0x4)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/util.go:35 +0x58
+created by github.com/weeniemount/syncthing/lib/model.(*deadlockDetector).Watch
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/util.go:33 +0xb2
 
 goroutine 28 [sleep]:
 runtime.goparkunlock(...)
 	/usr/local/go/src/runtime/proc.go:307
 time.Sleep(0x45d964b800)
 	/usr/local/go/src/runtime/time.go:105 +0x159
-github.com/syncthing/syncthing/lib/model.(*deadlockDetector).Watch.func1(0xc0000a0d90, 0x570e6a0, 0xc000146820, 0x48819ca, 0x4)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/util.go:35 +0x58
-created by github.com/syncthing/syncthing/lib/model.(*deadlockDetector).Watch
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/util.go:33 +0xb2
+github.com/weeniemount/syncthing/lib/model.(*deadlockDetector).Watch.func1(0xc0000a0d90, 0x570e6a0, 0xc000146820, 0x48819ca, 0x4)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/util.go:35 +0x58
+created by github.com/weeniemount/syncthing/lib/model.(*deadlockDetector).Watch
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/util.go:33 +0xb2
 
 goroutine 29 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc000470b40)
@@ -182,28 +182,28 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 10 [select]:
-github.com/syncthing/syncthing/lib/model.(*ProgressEmitter).Serve(0xc00022e5a0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/progressemitter.go:59 +0x37c
+github.com/weeniemount/syncthing/lib/model.(*ProgressEmitter).Serve(0xc00022e5a0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/progressemitter.go:59 +0x37c
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470b40, 0xc000000000, 0x4b321c0, 0xc00022e5a0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 11 [chan receive]:
-github.com/syncthing/syncthing/lib/model.(*folder).scanSubdirs(0xc00011a840, 0x0, 0x0, 0x0, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder.go:402 +0x68f
-github.com/syncthing/syncthing/lib/model.(*folder).scanTimerFired(0xc00011a840)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder.go:545 +0x54
-github.com/syncthing/syncthing/lib/model.(*folder).Serve(0xc00011a840)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder.go:181 +0x7c9
+github.com/weeniemount/syncthing/lib/model.(*folder).scanSubdirs(0xc00011a840, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder.go:402 +0x68f
+github.com/weeniemount/syncthing/lib/model.(*folder).scanTimerFired(0xc00011a840)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder.go:545 +0x54
+github.com/weeniemount/syncthing/lib/model.(*folder).Serve(0xc00011a840)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder.go:181 +0x7c9
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470b40, 0xc000000001, 0x570e6c8, 0xc00011a840)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 12 [select]:
-github.com/syncthing/syncthing/lib/model.(*folder).Serve(0xc000196840)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder.go:153 +0x47d
+github.com/weeniemount/syncthing/lib/model.(*folder).Serve(0xc000196840)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder.go:153 +0x47d
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470b40, 0xc000000002, 0x570e6c8, 0xc000196840)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -218,22 +218,22 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 32 [chan receive]:
-github.com/syncthing/syncthing/lib/connections.(*service).dialParallel(0xc0001a80e0, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc0001e50e0, 0x1, 0x1, 0xc00000d567, 0x5, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:854 +0x4c9
-github.com/syncthing/syncthing/lib/connections.(*service).connect(0xc0001a80e0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:455 +0xee6
-github.com/syncthing/syncthing/lib/connections.serviceFunc.Serve(0xc0000a1010)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/structs.go:180 +0x25
+github.com/weeniemount/syncthing/lib/connections.(*service).dialParallel(0xc0001a80e0, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc0001e50e0, 0x1, 0x1, 0xc00000d567, 0x5, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:854 +0x4c9
+github.com/weeniemount/syncthing/lib/connections.(*service).connect(0xc0001a80e0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:455 +0xee6
+github.com/weeniemount/syncthing/lib/connections.serviceFunc.Serve(0xc0000a1010)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/structs.go:180 +0x25
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470ff0, 0xc000000000, 0x4b33700, 0xc0000a1010)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 33 [chan receive]:
-github.com/syncthing/syncthing/lib/connections.(*service).handle(0xc0001a80e0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:193 +0x7d
-github.com/syncthing/syncthing/lib/connections.serviceFunc.Serve(0xc0000a1020)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/structs.go:180 +0x25
+github.com/weeniemount/syncthing/lib/connections.(*service).handle(0xc0001a80e0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:193 +0x7d
+github.com/weeniemount/syncthing/lib/connections.serviceFunc.Serve(0xc0000a1020)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/structs.go:180 +0x25
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470ff0, 0xc000000001, 0x4b33700, 0xc0000a1020)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -262,24 +262,24 @@ net.(*TCPListener).accept(0xc0000be0e0, 0xe9, 0x0, 0x0)
 	/usr/local/go/src/net/tcpsock_posix.go:139 +0x32
 net.(*TCPListener).Accept(0xc0000be0e0, 0xbf2f613b6ecc3d68, 0xe8b29287, 0x50bfa40, 0x0)
 	/usr/local/go/src/net/tcpsock.go:260 +0x48
-github.com/syncthing/syncthing/lib/connections.(*tcpListener).Serve(0xc00017a1b0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/tcp_listen.go:87 +0x728
+github.com/weeniemount/syncthing/lib/connections.(*tcpListener).Serve(0xc00017a1b0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/tcp_listen.go:87 +0x728
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc0004710e0, 0xc000000000, 0x570e8a0, 0xc00017a1b0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 57 [select]:
-github.com/syncthing/syncthing/lib/discover.(*globalClient).Serve(0xc00015c3f0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/global.go:201 +0x177
+github.com/weeniemount/syncthing/lib/discover.(*globalClient).Serve(0xc00015c3f0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/global.go:201 +0x177
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470f00, 0xc000000000, 0x5788660, 0xc00015c3f0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 58 [select]:
-github.com/syncthing/syncthing/lib/discover.(*globalClient).Serve(0xc00015c460)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/global.go:201 +0x177
+github.com/weeniemount/syncthing/lib/discover.(*globalClient).Serve(0xc00015c460)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/global.go:201 +0x177
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000470f00, 0xc000000001, 0x5788660, 0xc00015c460)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -292,18 +292,18 @@ created by github.com/rcrowley/go-metrics.NewMeter
 	/Users/jb/go/pkg/mod/github.com/rcrowley/go-metrics@v0.0.0-20171128170426-e181e095bae9/meter.go:44 +0x107
 
 goroutine 40 [chan receive]:
-github.com/syncthing/syncthing/lib/beacon.(*Broadcast).Recv(0xc0000cbda0, 0xc00016c1b8, 0x20, 0xc00046ee01, 0x2, 0x2)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/broadcast.go:67 +0x53
-github.com/syncthing/syncthing/lib/discover.(*localClient).recvAnnouncements(0xc00016c1b0, 0x4b3d600, 0xc0000cbda0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:164 +0xb1
-created by github.com/syncthing/syncthing/lib/discover.(*localClient).startLocalIPv4Broadcasts
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:89 +0xd5
+github.com/weeniemount/syncthing/lib/beacon.(*Broadcast).Recv(0xc0000cbda0, 0xc00016c1b8, 0x20, 0xc00046ee01, 0x2, 0x2)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/broadcast.go:67 +0x53
+github.com/weeniemount/syncthing/lib/discover.(*localClient).recvAnnouncements(0xc00016c1b0, 0x4b3d600, 0xc0000cbda0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:164 +0xb1
+created by github.com/weeniemount/syncthing/lib/discover.(*localClient).startLocalIPv4Broadcasts
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:89 +0xd5
 
 goroutine 41 [select]:
-github.com/syncthing/syncthing/lib/discover.(*localClient).sendLocalAnnouncements(0xc00016c1b0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:154 +0x123
-created by github.com/syncthing/syncthing/lib/discover.NewLocal
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:81 +0x2d9
+github.com/weeniemount/syncthing/lib/discover.(*localClient).sendLocalAnnouncements(0xc00016c1b0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:154 +0x123
+created by github.com/weeniemount/syncthing/lib/discover.NewLocal
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:81 +0x2d9
 
 goroutine 42 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc000268e10)
@@ -314,18 +314,18 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 43 [chan receive]:
-github.com/syncthing/syncthing/lib/beacon.(*Multicast).Recv(0xc0000cbf20, 0xc00016c3f8, 0x20, 0xc0000acb01, 0x2, 0x2)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/multicast.go:67 +0x53
-github.com/syncthing/syncthing/lib/discover.(*localClient).recvAnnouncements(0xc00016c3f0, 0x4b3d640, 0xc0000cbf20)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:164 +0xb1
-created by github.com/syncthing/syncthing/lib/discover.(*localClient).startLocalIPv6Multicasts
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:95 +0xdf
+github.com/weeniemount/syncthing/lib/beacon.(*Multicast).Recv(0xc0000cbf20, 0xc00016c3f8, 0x20, 0xc0000acb01, 0x2, 0x2)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/multicast.go:67 +0x53
+github.com/weeniemount/syncthing/lib/discover.(*localClient).recvAnnouncements(0xc00016c3f0, 0x4b3d640, 0xc0000cbf20)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:164 +0xb1
+created by github.com/weeniemount/syncthing/lib/discover.(*localClient).startLocalIPv6Multicasts
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:95 +0xdf
 
 goroutine 44 [select]:
-github.com/syncthing/syncthing/lib/discover.(*localClient).sendLocalAnnouncements(0xc00016c3f0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:154 +0x123
-created by github.com/syncthing/syncthing/lib/discover.NewLocal
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/discover/local.go:81 +0x2d9
+github.com/weeniemount/syncthing/lib/discover.(*localClient).sendLocalAnnouncements(0xc00016c3f0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:154 +0x123
+created by github.com/weeniemount/syncthing/lib/discover.NewLocal
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/discover/local.go:81 +0x2d9
 
 goroutine 45 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc000268ff0)
@@ -336,8 +336,8 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 46 [select]:
-github.com/syncthing/syncthing/lib/ur.(*Service).Serve(0xc0002461c0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/ur/usage_report.go:399 +0x231
+github.com/weeniemount/syncthing/lib/ur.(*Service).Serve(0xc0002461c0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/ur/usage_report.go:399 +0x231
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000268000, 0xc000000003, 0x4b32340, 0xc0002461c0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -345,7 +345,7 @@ created by github.com/thejerf/suture.(*Supervisor).runService
 
 goroutine 47 [select]:
 main.(*cpuService).Serve(0xc0000ce860)
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/cpuusage.go:41 +0x170
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/cpuusage.go:41 +0x170
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000268000, 0xc000000004, 0x4b32780, 0xc0000ce860)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -362,28 +362,28 @@ os.openFileNolog(0xc0000b2510, 0x2e, 0x0, 0xc0000001ff, 0x12, 0xc000537e20, 0x1b
 	/usr/local/go/src/os/file_unix.go:227 +0x1f9
 os.OpenFile(0xc0000b2510, 0x2e, 0x0, 0x1ff, 0xc0000b2510, 0x2e, 0x0)
 	/usr/local/go/src/os/file.go:284 +0x5f
-github.com/syncthing/syncthing/lib/fs.(*BasicFilesystem).DirNames(0xc0000c3b70, 0xc000537e20, 0x1b, 0x0, 0x0, 0x0, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/basicfs.go:195 +0xa5
-github.com/syncthing/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc000537e20, 0x1b, 0x4b43d80, 0xc0014cf1b0, 0xc0001e4280, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/walkfs.go:58 +0x1d7
-github.com/syncthing/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc0038b2f40, 0x16, 0x4b43d80, 0xc0011f6940, 0xc0001e4280, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/walkfs.go:71 +0x41e
-github.com/syncthing/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc003dfd320, 0x14, 0x4b43d80, 0xc001016050, 0xc0001e4280, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/walkfs.go:71 +0x41e
-github.com/syncthing/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0x4880b35, 0x1, 0x4b43d80, 0xc0000c3e30, 0xc0001e4280, 0x0, 0xc000237f48)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/walkfs.go:71 +0x41e
-github.com/syncthing/syncthing/lib/fs.(*walkFilesystem).Walk(0xc0000c3b80, 0x4880b35, 0x1, 0xc0001e4280, 0x50bfa40, 0xc0000c3d70)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/walkfs.go:93 +0xd3
-github.com/syncthing/syncthing/lib/scanner.(*walker).walk.func1(0xc00014e080, 0x4b3b4c0, 0xc0000b6cc0, 0xc00026afc0, 0xc00026b020)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/scanner/walk.go:111 +0x127
-created by github.com/syncthing/syncthing/lib/scanner.(*walker).walk
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/scanner/walk.go:108 +0x18c
+github.com/weeniemount/syncthing/lib/fs.(*BasicFilesystem).DirNames(0xc0000c3b70, 0xc000537e20, 0x1b, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/basicfs.go:195 +0xa5
+github.com/weeniemount/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc000537e20, 0x1b, 0x4b43d80, 0xc0014cf1b0, 0xc0001e4280, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/walkfs.go:58 +0x1d7
+github.com/weeniemount/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc0038b2f40, 0x16, 0x4b43d80, 0xc0011f6940, 0xc0001e4280, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/walkfs.go:71 +0x41e
+github.com/weeniemount/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0xc003dfd320, 0x14, 0x4b43d80, 0xc001016050, 0xc0001e4280, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/walkfs.go:71 +0x41e
+github.com/weeniemount/syncthing/lib/fs.(*walkFilesystem).walk(0xc0000c3b80, 0x4880b35, 0x1, 0x4b43d80, 0xc0000c3e30, 0xc0001e4280, 0x0, 0xc000237f48)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/walkfs.go:71 +0x41e
+github.com/weeniemount/syncthing/lib/fs.(*walkFilesystem).Walk(0xc0000c3b80, 0x4880b35, 0x1, 0xc0001e4280, 0x50bfa40, 0xc0000c3d70)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/walkfs.go:93 +0xd3
+github.com/weeniemount/syncthing/lib/scanner.(*walker).walk.func1(0xc00014e080, 0x4b3b4c0, 0xc0000b6cc0, 0xc00026afc0, 0xc00026b020)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/scanner/walk.go:111 +0x127
+created by github.com/weeniemount/syncthing/lib/scanner.(*walker).walk
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/scanner/walk.go:108 +0x18c
 
 goroutine 15 [chan receive]:
-github.com/syncthing/syncthing/lib/scanner.(*walker).walk.func2(0xc00026afc0, 0x4b3b4c0, 0xc0000b6cc0, 0xc00014e080, 0xc00026b020, 0xc0001e4230)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/scanner/walk.go:145 +0xb3
-created by github.com/syncthing/syncthing/lib/scanner.(*walker).walk
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/scanner/walk.go:141 +0x216
+github.com/weeniemount/syncthing/lib/scanner.(*walker).walk.func2(0xc00026afc0, 0x4b3b4c0, 0xc0000b6cc0, 0xc00014e080, 0xc00026b020, 0xc0001e4230)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/scanner/walk.go:145 +0xb3
+created by github.com/weeniemount/syncthing/lib/scanner.(*walker).walk
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/scanner/walk.go:141 +0x216
 
 goroutine 48 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc0002691d0)
@@ -420,16 +420,16 @@ golang.org/x/net/ipv6.(*payloadHandler).readFrom(0xc00015e560, 0xc002e76000, 0x1
 	/Users/jb/go/pkg/mod/golang.org/x/net@v0.0.0-20181201002055-351d144fa1fc/ipv6/payload_cmsg_go1_9.go:25 +0x1a7
 golang.org/x/net/ipv6.(*payloadHandler).ReadFrom(0xc00015e560, 0xc002e76000, 0x10000, 0x10000, 0x2, 0x2, 0x4b32940, 0xc00030aa50, 0x0, 0x0)
 	/Users/jb/go/pkg/mod/golang.org/x/net@v0.0.0-20181201002055-351d144fa1fc/ipv6/payload_cmsg.go:19 +0x6d
-github.com/syncthing/syncthing/lib/beacon.(*multicastReader).Serve(0xc00007d600)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/multicast.go:204 +0x760
+github.com/weeniemount/syncthing/lib/beacon.(*multicastReader).Serve(0xc00007d600)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/multicast.go:204 +0x760
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc0002690e0, 0xc000000000, 0x4b31f00, 0xc00007d600)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 83 [chan receive]:
-github.com/syncthing/syncthing/lib/beacon.(*multicastWriter).Serve(0xc00007d640)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/multicast.go:109 +0x849
+github.com/weeniemount/syncthing/lib/beacon.(*multicastWriter).Serve(0xc00007d640)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/multicast.go:109 +0x849
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc0002690e0, 0xc000000001, 0x4b31f40, 0xc00007d640)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -474,54 +474,54 @@ github.com/syndtr/goleveldb/leveldb/iterator.(*mergedIterator).Next(0xc00014cc80
 	/Users/jb/go/pkg/mod/github.com/syndtr/goleveldb@v0.0.0-20171214120811-34011bf325bc/leveldb/iterator/merged_iter.go:169 +0xe2
 github.com/syndtr/goleveldb/leveldb.(*dbIter).Next(0xc00016c510, 0x1)
 	/Users/jb/go/pkg/mod/github.com/syndtr/goleveldb@v0.0.0-20171214120811-34011bf325bc/leveldb/db_iter.go:240 +0x97
-github.com/syncthing/syncthing/lib/db.(*instance).withNeed(0xc00046e1e0, 0xc0004be9e0, 0xb, 0x10, 0xc0012a6da0, 0x20, 0x20, 0x1, 0xc0004bd400)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/db/instance.go:331 +0x2b6
-github.com/syncthing/syncthing/lib/db.(*FileSet).WithNeedTruncated(0xc0000b6b00, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc003338740)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/db/set.go:162 +0x1ee
-github.com/syncthing/syncthing/lib/model.(*model).Completion(0xc0001a6160, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc0002482e6, 0xb, 0x0, 0x0, 0x0, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/model.go:693 +0x34a
-github.com/syncthing/syncthing/lib/api.(*service).getDBCompletion(0xc000118dc0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:654 +0x13e
+github.com/weeniemount/syncthing/lib/db.(*instance).withNeed(0xc00046e1e0, 0xc0004be9e0, 0xb, 0x10, 0xc0012a6da0, 0x20, 0x20, 0x1, 0xc0004bd400)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/db/instance.go:331 +0x2b6
+github.com/weeniemount/syncthing/lib/db.(*FileSet).WithNeedTruncated(0xc0000b6b00, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc003338740)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/db/set.go:162 +0x1ee
+github.com/weeniemount/syncthing/lib/model.(*model).Completion(0xc0001a6160, 0x303a58f8b941897c, 0xe0c6153d5b38dadd, 0x6308f7c9a45b6725, 0x9c959a98f78344e6, 0xc0002482e6, 0xb, 0x0, 0x0, 0x0, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/model.go:693 +0x34a
+github.com/weeniemount/syncthing/lib/api.(*service).getDBCompletion(0xc000118dc0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:654 +0x13e
 net/http.HandlerFunc.ServeHTTP(0xc002ef2080, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a880, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:426 +0xe6
+github.com/weeniemount/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:426 +0xe6
 net/http.HandlerFunc.ServeHTTP(0xc00030abd0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:518 +0x117
+github.com/weeniemount/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:518 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc000010bc0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:541 +0x3f4
+github.com/weeniemount/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:541 +0x3f4
 net/http.HandlerFunc.ServeHTTP(0xc000010be0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a940, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_csrf.go:78 +0x208
+github.com/weeniemount/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_csrf.go:78 +0x208
 net/http.HandlerFunc.ServeHTTP(0xc0001713f0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:549 +0x2ce
+github.com/weeniemount/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:549 +0x2ce
 net/http.HandlerFunc.ServeHTTP(0xc0000c94c0, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_auth.go:51 +0xa64
+github.com/weeniemount/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_auth.go:51 +0xa64
 net/http.HandlerFunc.ServeHTTP(0xc0001e9040, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:531 +0x117
+github.com/weeniemount/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:531 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc0000ad700, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:510 +0x2a6
+github.com/weeniemount/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:510 +0x2a6
 net/http.HandlerFunc.ServeHTTP(0xc0000ad720, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:438 +0xa7
+github.com/weeniemount/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc001116380, 0xc003ce0d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:438 +0xa7
 net/http.HandlerFunc.ServeHTTP(0xc0000ad740, 0x4b39580, 0xc001116380, 0xc003ce0d00)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.serverHandler.ServeHTTP(0xc0001e9110, 0x4b39580, 0xc001116380, 0xc003ce0d00)
@@ -544,8 +544,8 @@ net.(*netFD).Read(0xc001002700, 0xc00035f100, 0x62b, 0x62b, 0xc003f3b8c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc001199ae0, 0xc00035f100, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00138c8a0, 0xc00035f100, 0x62b, 0x62b, 0xc003f3b900, 0xc003f3b9a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00138c8a0, 0xc00035f100, 0x62b, 0x62b, 0xc003f3b900, 0xc003f3b9a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc000239200, 0xc00035f100, 0x62b, 0x62b, 0xc00409a005, 0xc001002718, 0xc003f3b9d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc000036958, 0x4b2a4a0, 0xc000239200, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -570,10 +570,10 @@ created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:2884 +0x2f4
 
 goroutine 86 [select]:
-github.com/syncthing/syncthing/lib/fs.(*BasicFilesystem).watchLoop(0xc0000c3b70, 0x4880b35, 0x1, 0xc0000383c0, 0x12, 0xc0000bd320, 0xc00026b140, 0x4b32140, 0xc00017a090, 0x4b3b4c0, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/basicfs_watch.go:81 +0x2c8
-created by github.com/syncthing/syncthing/lib/fs.(*BasicFilesystem).Watch
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/basicfs_watch.go:59 +0x3e7
+github.com/weeniemount/syncthing/lib/fs.(*BasicFilesystem).watchLoop(0xc0000c3b70, 0x4880b35, 0x1, 0xc0000383c0, 0x12, 0xc0000bd320, 0xc00026b140, 0x4b32140, 0xc00017a090, 0x4b3b4c0, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/basicfs_watch.go:81 +0x2c8
+created by github.com/weeniemount/syncthing/lib/fs.(*BasicFilesystem).Watch
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/basicfs_watch.go:59 +0x3e7
 
 goroutine 72 [select]:
 github.com/thejerf/suture.(*Supervisor).Serve(0xc000268f00)
@@ -598,16 +598,16 @@ net.(*UDPConn).readFrom(0xc0000be100, 0xc002d06000, 0x10000, 0x10000, 0xc0000c18
 	/usr/local/go/src/net/udpsock_posix.go:47 +0x6a
 net.(*UDPConn).ReadFrom(0xc0000be100, 0xc002d06000, 0x10000, 0x10000, 0x2, 0x2, 0xc0001e74a0, 0x0, 0x0)
 	/usr/local/go/src/net/udpsock.go:121 +0x5e
-github.com/syncthing/syncthing/lib/beacon.(*broadcastReader).Serve(0xc00007d540)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/broadcast.go:196 +0x371
+github.com/weeniemount/syncthing/lib/beacon.(*broadcastReader).Serve(0xc00007d540)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/broadcast.go:196 +0x371
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000268f00, 0xc000000000, 0x4b31e80, 0xc00007d540)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 74 [chan receive]:
-github.com/syncthing/syncthing/lib/beacon.(*broadcastWriter).Serve(0xc00007d580)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/beacon/broadcast.go:102 +0x3ca
+github.com/weeniemount/syncthing/lib/beacon.(*broadcastWriter).Serve(0xc00007d580)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/beacon/broadcast.go:102 +0x3ca
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000268f00, 0xc000000001, 0x4b31ec0, 0xc00007d580)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -626,8 +626,8 @@ net.(*netFD).Read(0xc000b88400, 0xc00035e300, 0x62b, 0x62b, 0xc003f3d8c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc000fa3568, 0xc00035e300, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00138ce60, 0xc00035e300, 0x62b, 0x62b, 0xc003f3d900, 0xc003f3d9a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00138ce60, 0xc00035e300, 0x62b, 0x62b, 0xc003f3d900, 0xc003f3d9a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc003301b00, 0xc00035e300, 0x62b, 0x62b, 0xc00337e1e5, 0xc000b88418, 0xc003f3d9d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc000037058, 0x4b2a4a0, 0xc003301b00, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -657,9 +657,9 @@ runtime.goparkunlock(...)
 time.Sleep(0x2540be400)
 	/usr/local/go/src/runtime/time.go:105 +0x159
 main.standbyMonitor()
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:1154 +0x6b
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:1154 +0x6b
 created by main.syncthingMain
-	/Users/jb/dev/github.com/syncthing/syncthing/cmd/syncthing/main.go:884 +0x2608
+	/Users/jb/dev/github.com/weeniemount/syncthing/cmd/syncthing/main.go:884 +0x2608
 
 goroutine 63 [IO wait]:
 internal/poll.runtime_pollWait(0x5740af8, 0x72, 0xffffffffffffffff)
@@ -698,54 +698,54 @@ created by net/http.(*Transport).dialConn
 	/usr/local/go/src/net/http/transport.go:1357 +0xae8
 
 goroutine 130 [select]:
-github.com/syncthing/syncthing/lib/sync.(*TimeoutCondWaiter).Wait(0xc001200e58, 0x4a45d00)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/sync/sync.go:292 +0x115
-github.com/syncthing/syncthing/lib/events.(*bufferedSubscription).Since(0xc0002820f0, 0x0, 0x50e2748, 0x0, 0x0, 0xdf8475800, 0x0, 0x0, 0x0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/events/events.go:461 +0x4db
-github.com/syncthing/syncthing/lib/api.(*service).getEvents(0xc000118dc0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700, 0x4b2a820, 0xc0002820f0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:1191 +0x2a4
-github.com/syncthing/syncthing/lib/api.(*service).getDiskEvents(0xc000118dc0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:1167 +0x74
+github.com/weeniemount/syncthing/lib/sync.(*TimeoutCondWaiter).Wait(0xc001200e58, 0x4a45d00)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/sync/sync.go:292 +0x115
+github.com/weeniemount/syncthing/lib/events.(*bufferedSubscription).Since(0xc0002820f0, 0x0, 0x50e2748, 0x0, 0x0, 0xdf8475800, 0x0, 0x0, 0x0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/events/events.go:461 +0x4db
+github.com/weeniemount/syncthing/lib/api.(*service).getEvents(0xc000118dc0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700, 0x4b2a820, 0xc0002820f0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:1191 +0x2a4
+github.com/weeniemount/syncthing/lib/api.(*service).getDiskEvents(0xc000118dc0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:1167 +0x74
 net/http.HandlerFunc.ServeHTTP(0xc002ef2140, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a880, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:426 +0xe6
+github.com/weeniemount/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:426 +0xe6
 net/http.HandlerFunc.ServeHTTP(0xc00030abd0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:518 +0x117
+github.com/weeniemount/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:518 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc000010bc0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:541 +0x3f4
+github.com/weeniemount/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:541 +0x3f4
 net/http.HandlerFunc.ServeHTTP(0xc000010be0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a940, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_csrf.go:78 +0x208
+github.com/weeniemount/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_csrf.go:78 +0x208
 net/http.HandlerFunc.ServeHTTP(0xc0001713f0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:549 +0x2ce
+github.com/weeniemount/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:549 +0x2ce
 net/http.HandlerFunc.ServeHTTP(0xc0000c94c0, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_auth.go:51 +0xa64
+github.com/weeniemount/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_auth.go:51 +0xa64
 net/http.HandlerFunc.ServeHTTP(0xc0001e9040, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:531 +0x117
+github.com/weeniemount/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:531 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc0000ad700, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:510 +0x2a6
+github.com/weeniemount/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:510 +0x2a6
 net/http.HandlerFunc.ServeHTTP(0xc0000ad720, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:438 +0xa7
+github.com/weeniemount/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc0014cc2a0, 0xc00013a700)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:438 +0xa7
 net/http.HandlerFunc.ServeHTTP(0xc0000ad740, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.serverHandler.ServeHTTP(0xc0001e9110, 0x4b39580, 0xc0014cc2a0, 0xc00013a700)
@@ -764,54 +764,54 @@ github.com/syndtr/goleveldb/leveldb.(*dbIter).next(0xc0002502d0, 0x1)
 	/Users/jb/go/pkg/mod/github.com/syndtr/goleveldb@v0.0.0-20171214120811-34011bf325bc/leveldb/db_iter.go:213 +0x330
 github.com/syndtr/goleveldb/leveldb.(*dbIter).Next(0xc0002502d0, 0x1)
 	/Users/jb/go/pkg/mod/github.com/syndtr/goleveldb@v0.0.0-20171214120811-34011bf325bc/leveldb/db_iter.go:245 +0xd9
-github.com/syncthing/syncthing/lib/db.(*instance).withNeed(0xc00046e1e0, 0xc000953c10, 0xb, 0x10, 0xc0012a2da0, 0x20, 0x20, 0x1, 0xc003492290)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/db/instance.go:331 +0x2b6
-github.com/syncthing/syncthing/lib/db.(*FileSet).WithNeedTruncated(0xc0000b6b00, 0x5d4a557355ee1a96, 0x95ccd59f7d44241, 0x23a9c69bae83ac87, 0x6ee52bc80a137f7b, 0xc00133c280)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/db/set.go:162 +0x1ee
-github.com/syncthing/syncthing/lib/model.(*model).Completion(0xc0001a6160, 0x5d4a557355ee1a96, 0x95ccd59f7d44241, 0x23a9c69bae83ac87, 0x6ee52bc80a137f7b, 0xc000cd6ae6, 0xb, 0x0, 0x0, 0x0, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/model.go:693 +0x34a
-github.com/syncthing/syncthing/lib/api.(*service).getDBCompletion(0xc000118dc0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:654 +0x13e
+github.com/weeniemount/syncthing/lib/db.(*instance).withNeed(0xc00046e1e0, 0xc000953c10, 0xb, 0x10, 0xc0012a2da0, 0x20, 0x20, 0x1, 0xc003492290)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/db/instance.go:331 +0x2b6
+github.com/weeniemount/syncthing/lib/db.(*FileSet).WithNeedTruncated(0xc0000b6b00, 0x5d4a557355ee1a96, 0x95ccd59f7d44241, 0x23a9c69bae83ac87, 0x6ee52bc80a137f7b, 0xc00133c280)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/db/set.go:162 +0x1ee
+github.com/weeniemount/syncthing/lib/model.(*model).Completion(0xc0001a6160, 0x5d4a557355ee1a96, 0x95ccd59f7d44241, 0x23a9c69bae83ac87, 0x6ee52bc80a137f7b, 0xc000cd6ae6, 0xb, 0x0, 0x0, 0x0, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/model.go:693 +0x34a
+github.com/weeniemount/syncthing/lib/api.(*service).getDBCompletion(0xc000118dc0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:654 +0x13e
 net/http.HandlerFunc.ServeHTTP(0xc002ef2080, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a880, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:426 +0xe6
+github.com/weeniemount/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:426 +0xe6
 net/http.HandlerFunc.ServeHTTP(0xc00030abd0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:518 +0x117
+github.com/weeniemount/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:518 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc000010bc0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:541 +0x3f4
+github.com/weeniemount/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:541 +0x3f4
 net/http.HandlerFunc.ServeHTTP(0xc000010be0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a940, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_csrf.go:78 +0x208
+github.com/weeniemount/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_csrf.go:78 +0x208
 net/http.HandlerFunc.ServeHTTP(0xc0001713f0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:549 +0x2ce
+github.com/weeniemount/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:549 +0x2ce
 net/http.HandlerFunc.ServeHTTP(0xc0000c94c0, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_auth.go:51 +0xa64
+github.com/weeniemount/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_auth.go:51 +0xa64
 net/http.HandlerFunc.ServeHTTP(0xc0001e9040, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:531 +0x117
+github.com/weeniemount/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:531 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc0000ad700, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:510 +0x2a6
+github.com/weeniemount/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:510 +0x2a6
 net/http.HandlerFunc.ServeHTTP(0xc0000ad720, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:438 +0xa7
+github.com/weeniemount/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc002e5f500, 0xc003ce0000)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:438 +0xa7
 net/http.HandlerFunc.ServeHTTP(0xc0000ad740, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.serverHandler.ServeHTTP(0xc0001e9110, 0x4b39580, 0xc002e5f500, 0xc003ce0000)
@@ -822,46 +822,46 @@ created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:2884 +0x2f4
 
 goroutine 84 [select]:
-github.com/syncthing/syncthing/lib/fs.(*BasicFilesystem).watchLoop(0xc0000c3b90, 0x4880b35, 0x1, 0xc0000384c0, 0x14, 0xc000080600, 0xc0000d64e0, 0x4b32140, 0xc00017a120, 0x4b3b4c0, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/basicfs_watch.go:81 +0x2c8
-created by github.com/syncthing/syncthing/lib/fs.(*BasicFilesystem).Watch
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/fs/basicfs_watch.go:59 +0x3e7
+github.com/weeniemount/syncthing/lib/fs.(*BasicFilesystem).watchLoop(0xc0000c3b90, 0x4880b35, 0x1, 0xc0000384c0, 0x14, 0xc000080600, 0xc0000d64e0, 0x4b32140, 0xc00017a120, 0x4b3b4c0, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/basicfs_watch.go:81 +0x2c8
+created by github.com/weeniemount/syncthing/lib/fs.(*BasicFilesystem).Watch
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/fs/basicfs_watch.go:59 +0x3e7
 
 goroutine 85 [select]:
-github.com/syncthing/syncthing/lib/watchaggregator.(*aggregator).mainLoop(0xc0000b8d00, 0xc0000d64e0, 0xc0000d6420, 0x4b4aac0, 0xc000059800)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/watchaggregator/aggregator.go:148 +0x38e
-created by github.com/syncthing/syncthing/lib/watchaggregator.Aggregate
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/watchaggregator/aggregator.go:132 +0xdc
+github.com/weeniemount/syncthing/lib/watchaggregator.(*aggregator).mainLoop(0xc0000b8d00, 0xc0000d64e0, 0xc0000d6420, 0x4b4aac0, 0xc000059800)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/watchaggregator/aggregator.go:148 +0x38e
+created by github.com/weeniemount/syncthing/lib/watchaggregator.Aggregate
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/watchaggregator/aggregator.go:132 +0xdc
 
 goroutine 87 [select]:
-github.com/syncthing/syncthing/lib/watchaggregator.(*aggregator).mainLoop(0xc0000b8ea0, 0xc00026b140, 0xc00026af00, 0x4b4aac0, 0xc000059800)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/watchaggregator/aggregator.go:148 +0x38e
-created by github.com/syncthing/syncthing/lib/watchaggregator.Aggregate
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/watchaggregator/aggregator.go:132 +0xdc
+github.com/weeniemount/syncthing/lib/watchaggregator.(*aggregator).mainLoop(0xc0000b8ea0, 0xc00026b140, 0xc00026af00, 0x4b4aac0, 0xc000059800)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/watchaggregator/aggregator.go:148 +0x38e
+created by github.com/weeniemount/syncthing/lib/watchaggregator.Aggregate
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/watchaggregator/aggregator.go:132 +0xdc
 
 goroutine 49 [select]:
-github.com/syncthing/syncthing/lib/model.(*folderSummaryService).listenForUpdates(0xc0000f2960)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder_summary.go:158 +0x352
-github.com/syncthing/syncthing/lib/model.serviceFunc.Serve(0xc0000347b0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder_summary.go:311 +0x25
+github.com/weeniemount/syncthing/lib/model.(*folderSummaryService).listenForUpdates(0xc0000f2960)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder_summary.go:158 +0x352
+github.com/weeniemount/syncthing/lib/model.serviceFunc.Serve(0xc0000347b0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder_summary.go:311 +0x25
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc0002691d0, 0xc000000000, 0x4b33780, 0xc0000347b0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 98 [select]:
-github.com/syncthing/syncthing/lib/model.(*folderSummaryService).calculateSummaries(0xc0000f2960)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder_summary.go:229 +0x10c
-github.com/syncthing/syncthing/lib/model.serviceFunc.Serve(0xc0000347c0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/model/folder_summary.go:311 +0x25
+github.com/weeniemount/syncthing/lib/model.(*folderSummaryService).calculateSummaries(0xc0000f2960)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder_summary.go:229 +0x10c
+github.com/weeniemount/syncthing/lib/model.serviceFunc.Serve(0xc0000347c0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/model/folder_summary.go:311 +0x25
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc0002691d0, 0xc000000001, 0x4b33780, 0xc0000347c0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:588 +0x5b
 
 goroutine 99 [select]:
-github.com/syncthing/syncthing/lib/api.(*service).Serve(0xc000118dc0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:362 +0x2424
+github.com/weeniemount/syncthing/lib/api.(*service).Serve(0xc000118dc0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:362 +0x2424
 github.com/thejerf/suture.(*Supervisor).runService.func1(0xc000268000, 0xc000000006, 0x5741e50, 0xc000118dc0)
 	/Users/jb/go/pkg/mod/github.com/thejerf/suture@v3.0.2+incompatible/supervisor.go:600 +0x47
 created by github.com/thejerf/suture.(*Supervisor).runService
@@ -882,16 +882,16 @@ net.(*TCPListener).accept(0xc0000be170, 0x8, 0x2f8, 0xc000160320)
 	/usr/local/go/src/net/tcpsock_posix.go:139 +0x32
 net.(*TCPListener).Accept(0xc0000be170, 0x203000, 0x0, 0x405dea2, 0x404d39c)
 	/usr/local/go/src/net/tcpsock.go:260 +0x48
-github.com/syncthing/syncthing/lib/tlsutil.(*DowngradingListener).AcceptNoWrapTLS(0xc000010b20, 0x100000001, 0xc000272e48, 0x404f208, 0x460f5132d1e8, 0xc03447be48)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:189 +0x37
-github.com/syncthing/syncthing/lib/tlsutil.(*DowngradingListener).Accept(0xc000010b20, 0xc000272ec0, 0x18, 0xc0002c9500, 0x4325f54)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:170 +0x2f
+github.com/weeniemount/syncthing/lib/tlsutil.(*DowngradingListener).AcceptNoWrapTLS(0xc000010b20, 0x100000001, 0xc000272e48, 0x404f208, 0x460f5132d1e8, 0xc03447be48)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:189 +0x37
+github.com/weeniemount/syncthing/lib/tlsutil.(*DowngradingListener).Accept(0xc000010b20, 0xc000272ec0, 0x18, 0xc0002c9500, 0x4325f54)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:170 +0x2f
 net/http.(*Server).Serve(0xc0001e9110, 0x4b38dc0, 0xc000010b20, 0x0, 0x0)
 	/usr/local/go/src/net/http/server.go:2859 +0x22d
-github.com/syncthing/syncthing/lib/api.(*service).Serve.func1(0xc000080ae0, 0xc0001e9110, 0x4b38dc0, 0xc000010b20)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:357 +0x3f
-created by github.com/syncthing/syncthing/lib/api.(*service).Serve
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:356 +0x2363
+github.com/weeniemount/syncthing/lib/api.(*service).Serve.func1(0xc000080ae0, 0xc0001e9110, 0x4b38dc0, 0xc000010b20)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:357 +0x3f
+created by github.com/weeniemount/syncthing/lib/api.(*service).Serve
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:356 +0x2363
 
 goroutine 64 [select]:
 net/http.(*persistConn).writeLoop(0xc0000d0b40)
@@ -912,8 +912,8 @@ net.(*netFD).Read(0xc001002280, 0xc000c12000, 0x62b, 0x62b, 0xc0002f58c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc003046190, 0xc000c12000, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc003482ea0, 0xc000c12000, 0x62b, 0x62b, 0xc0002f5900, 0xc0002f59a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc003482ea0, 0xc000c12000, 0x62b, 0x62b, 0xc0002f5900, 0xc0002f59a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc0002392c0, 0xc000c12000, 0x62b, 0x62b, 0xc00409a5a5, 0xc001002298, 0xc0002f59d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc0000b1e58, 0x4b2a4a0, 0xc0002392c0, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -944,58 +944,58 @@ io.copyBuffer(0x5741150, 0xc000a35030, 0x4b2aee0, 0xc003a0e840, 0xc003fca000, 0x
 	/usr/local/go/src/io/io.go:402 +0x122
 io.CopyBuffer(...)
 	/usr/local/go/src/io/io.go:375
-github.com/syncthing/syncthing/lib/scanner.Blocks(0x4b3b500, 0xc0000c4030, 0x4b2a360, 0xc000c47ec0, 0x20000, 0x200000, 0x4b2a940, 0x50e2748, 0x4059500, 0xc003384300, ...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/scanner/blocks.go:69 +0x330
-github.com/syncthing/syncthing/lib/ur.cpuBenchOnce(0x7735940, 0xc0014d2000, 0xc0014d2000, 0x200000, 0x200000, 0x4051e3d70a3d70a4)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/ur/usage_report.go:468 +0x153
-github.com/syncthing/syncthing/lib/ur.CpuBench(0x5, 0x7735940, 0x488a100, 0xe)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/ur/usage_report.go:453 +0xd4
-github.com/syncthing/syncthing/lib/ur.(*Service).reportData(0xc0002461c0, 0x3, 0x1, 0x4b2b580)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/ur/usage_report.go:111 +0x8ad
-github.com/syncthing/syncthing/lib/ur.(*Service).ReportDataPreview(...)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/ur/usage_report.go:75
-github.com/syncthing/syncthing/lib/api.(*service).getReport(0xc000118dc0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:1102 +0x7f
+github.com/weeniemount/syncthing/lib/scanner.Blocks(0x4b3b500, 0xc0000c4030, 0x4b2a360, 0xc000c47ec0, 0x20000, 0x200000, 0x4b2a940, 0x50e2748, 0x4059500, 0xc003384300, ...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/scanner/blocks.go:69 +0x330
+github.com/weeniemount/syncthing/lib/ur.cpuBenchOnce(0x7735940, 0xc0014d2000, 0xc0014d2000, 0x200000, 0x200000, 0x4051e3d70a3d70a4)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/ur/usage_report.go:468 +0x153
+github.com/weeniemount/syncthing/lib/ur.CpuBench(0x5, 0x7735940, 0x488a100, 0xe)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/ur/usage_report.go:453 +0xd4
+github.com/weeniemount/syncthing/lib/ur.(*Service).reportData(0xc0002461c0, 0x3, 0x1, 0x4b2b580)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/ur/usage_report.go:111 +0x8ad
+github.com/weeniemount/syncthing/lib/ur.(*Service).ReportDataPreview(...)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/ur/usage_report.go:75
+github.com/weeniemount/syncthing/lib/api.(*service).getReport(0xc000118dc0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:1102 +0x7f
 net/http.HandlerFunc.ServeHTTP(0xc002ef2190, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a880, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:426 +0xe6
+github.com/weeniemount/syncthing/lib/api.getPostHandler.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:426 +0xe6
 net/http.HandlerFunc.ServeHTTP(0xc00030abd0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:518 +0x117
+github.com/weeniemount/syncthing/lib/api.metricsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:518 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc000010bc0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:541 +0x3f4
+github.com/weeniemount/syncthing/lib/api.noCacheMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:541 +0x3f4
 net/http.HandlerFunc.ServeHTTP(0xc000010be0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.(*ServeMux).ServeHTTP(0xc00022a940, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:2375 +0x1d6
-github.com/syncthing/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_csrf.go:78 +0x208
+github.com/weeniemount/syncthing/lib/api.csrfMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_csrf.go:78 +0x208
 net/http.HandlerFunc.ServeHTTP(0xc0001713f0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:549 +0x2ce
+github.com/weeniemount/syncthing/lib/api.withDetailsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:549 +0x2ce
 net/http.HandlerFunc.ServeHTTP(0xc0000c94c0, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api_auth.go:51 +0xa64
+github.com/weeniemount/syncthing/lib/api.basicAuthAndSessionMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api_auth.go:51 +0xa64
 net/http.HandlerFunc.ServeHTTP(0xc0001e9040, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:531 +0x117
+github.com/weeniemount/syncthing/lib/api.redirectToHTTPSMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:531 +0x117
 net/http.HandlerFunc.ServeHTTP(0xc0000ad700, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:510 +0x2a6
+github.com/weeniemount/syncthing/lib/api.corsMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:510 +0x2a6
 net/http.HandlerFunc.ServeHTTP(0xc0000ad720, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
-github.com/syncthing/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/api/api.go:438 +0xa7
+github.com/weeniemount/syncthing/lib/api.debugMiddleware.func1(0x4b39580, 0xc0011160e0, 0xc003ce0900)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/api/api.go:438 +0xa7
 net/http.HandlerFunc.ServeHTTP(0xc0000ad740, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
 	/usr/local/go/src/net/http/server.go:1995 +0x44
 net/http.serverHandler.ServeHTTP(0xc0001e9110, 0x4b39580, 0xc0011160e0, 0xc003ce0900)
@@ -1018,8 +1018,8 @@ net.(*netFD).Read(0xc001729d80, 0xc0034c2300, 0x62b, 0x62b, 0xc003f3f8c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc0011999f0, 0xc0034c2300, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00368a0e0, 0xc0034c2300, 0x62b, 0x62b, 0xc003f3f900, 0xc003f3f9a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc00368a0e0, 0xc0034c2300, 0x62b, 0x62b, 0xc003f3f900, 0xc003f3f9a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc000239240, 0xc0034c2300, 0x62b, 0x62b, 0xc00337e005, 0xc001729d98, 0xc003f3f9d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc0000b1058, 0x4b2a4a0, 0xc000239240, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -1056,8 +1056,8 @@ net.(*netFD).Read(0xc00014d500, 0xc00382ce00, 0x62b, 0x62b, 0xc0002f98c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc0030465e0, 0xc00382ce00, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc002d80ae0, 0xc00382ce00, 0x62b, 0x62b, 0xc0002f9900, 0xc0002f99a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc002d80ae0, 0xc00382ce00, 0x62b, 0x62b, 0xc0002f9900, 0xc0002f99a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc003d98a40, 0xc00382ce00, 0x62b, 0x62b, 0xc0000f0a05, 0xc00014d518, 0xc0002f99d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc0000b0cd8, 0x4b2a4a0, 0xc003d98a40, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -1130,8 +1130,8 @@ net.(*netFD).Read(0xc0000cd680, 0xc0034c0000, 0x62b, 0x62b, 0xc0037a98c0, 0x8, 0
 	/usr/local/go/src/net/fd_unix.go:202 +0x4f
 net.(*conn).Read(0xc000b1f630, 0xc0034c0000, 0x62b, 0x62b, 0x0, 0x0, 0x0)
 	/usr/local/go/src/net/net.go:177 +0x69
-github.com/syncthing/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc003482b40, 0xc0034c0000, 0x62b, 0x62b, 0xc0037a9900, 0xc0037a99a8, 0x10)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
+github.com/weeniemount/syncthing/lib/tlsutil.(*UnionedConnection).Read(0xc003482b40, 0xc0034c0000, 0x62b, 0x62b, 0xc0037a9900, 0xc0037a99a8, 0x10)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/tlsutil/tlsutil.go:223 +0xc1
 crypto/tls.(*atLeastReader).Read(0xc003d98a20, 0xc0034c0000, 0x62b, 0x62b, 0xc00409a3c5, 0xc0000cd698, 0xc0037a99d8)
 	/usr/local/go/src/crypto/tls/conn.go:761 +0x60
 bytes.(*Buffer).ReadFrom(0xc0000b1ad8, 0x4b2a4a0, 0xc003d98a20, 0x400bc55, 0x47b4f40, 0x4812c80)
@@ -1166,7 +1166,7 @@ sync.runtime_Semacquire(0xc003d18518)
 	/usr/local/go/src/runtime/sema.go:56 +0x39
 sync.(*WaitGroup).Wait(0xc003d18510)
 	/usr/local/go/src/sync/waitgroup.go:130 +0x65
-github.com/syncthing/syncthing/lib/connections.(*service).dialParallel.func2(0xc003d18510, 0xc0034bf3e0)
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:849 +0x2b
-created by github.com/syncthing/syncthing/lib/connections.(*service).dialParallel
-	/Users/jb/dev/github.com/syncthing/syncthing/lib/connections/service.go:848 +0x494
+github.com/weeniemount/syncthing/lib/connections.(*service).dialParallel.func2(0xc003d18510, 0xc0034bf3e0)
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:849 +0x2b
+created by github.com/weeniemount/syncthing/lib/connections.(*service).dialParallel
+	/Users/jb/dev/github.com/weeniemount/syncthing/lib/connections/service.go:848 +0x494

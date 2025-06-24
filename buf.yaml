@@ -1,7 +1,7 @@
 version: v2
 modules:
   - path: proto
-    name: github.com/syncthing/syncthing
+    name: github.com/weeniemount/syncthing
 lint:
   use:
     - STANDARD

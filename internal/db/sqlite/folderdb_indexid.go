@@ -12,8 +12,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func (s *folderDB) GetIndexID(device protocol.DeviceID) (protocol.IndexID, error) {

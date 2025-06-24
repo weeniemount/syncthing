@@ -16,9 +16,9 @@ import (
 	"github.com/thejerf/suture/v4"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/syncthing/syncthing/internal/gen/discosrv"
-	"github.com/syncthing/syncthing/internal/protoutil"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/gen/discosrv"
+	"github.com/weeniemount/syncthing/internal/protoutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type amqpReplicator struct {

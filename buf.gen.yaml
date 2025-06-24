@@ -3,10 +3,10 @@ managed:
   enabled: true
   override:
     - file_option: go_package_prefix
-      value: github.com/syncthing/syncthing/internal/gen
+      value: github.com/weeniemount/syncthing/internal/gen
 plugins:
   - remote: buf.build/protocolbuffers/go:v1.35.1
     out: .
-    opt: module=github.com/syncthing/syncthing
+    opt: module=github.com/weeniemount/syncthing
 inputs:
   - directory: proto

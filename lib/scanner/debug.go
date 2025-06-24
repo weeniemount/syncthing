@@ -7,7 +7,7 @@
 package scanner
 
 import (
-	"github.com/syncthing/syncthing/lib/logger"
+	"github.com/weeniemount/syncthing/lib/logger"
 )
 
 var l = logger.DefaultLogger.NewFacility("scanner", "File change detection and hashing")

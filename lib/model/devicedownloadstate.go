@@ -9,8 +9,8 @@ package model
 import (
 	"slices"
 
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 // deviceFolderFileDownloadState holds current download state of a file that

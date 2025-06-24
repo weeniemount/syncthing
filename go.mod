@@ -1,4 +1,4 @@
-module github.com/syncthing/syncthing
+module github.com/weeniemount/syncthing
 
 go 1.23.0
 

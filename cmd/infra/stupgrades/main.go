@@ -24,9 +24,9 @@ import (
 
 	"github.com/alecthomas/kong"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/httpcache"
-	"github.com/syncthing/syncthing/lib/upgrade"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/httpcache"
+	"github.com/weeniemount/syncthing/lib/upgrade"
 )
 
 type cli struct {

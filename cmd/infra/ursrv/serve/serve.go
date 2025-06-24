@@ -26,12 +26,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/puzpuzpuz/xsync/v3"
-	"github.com/syncthing/syncthing/internal/blob"
-	"github.com/syncthing/syncthing/internal/blob/azureblob"
-	"github.com/syncthing/syncthing/internal/blob/s3"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/geoip"
-	"github.com/syncthing/syncthing/lib/ur/contract"
+	"github.com/weeniemount/syncthing/internal/blob"
+	"github.com/weeniemount/syncthing/internal/blob/azureblob"
+	"github.com/weeniemount/syncthing/internal/blob/s3"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/geoip"
+	"github.com/weeniemount/syncthing/lib/ur/contract"
 )
 
 type CLI struct {

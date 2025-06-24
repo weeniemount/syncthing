@@ -7,8 +7,8 @@
 package sqlite
 
 import (
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type countsRow struct {

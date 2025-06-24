@@ -22,7 +22,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/rand"
 )
 
 var (

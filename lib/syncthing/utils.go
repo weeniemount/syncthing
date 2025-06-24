@@ -15,17 +15,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/db/olddb"
-	"github.com/syncthing/syncthing/internal/db/olddb/backend"
-	"github.com/syncthing/syncthing/internal/db/sqlite"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/locations"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/tlsutil"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/db/olddb"
+	"github.com/weeniemount/syncthing/internal/db/olddb/backend"
+	"github.com/weeniemount/syncthing/internal/db/sqlite"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/locations"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/tlsutil"
 )
 
 func EnsureDir(dir string, mode fs.FileMode) error {

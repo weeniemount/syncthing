@@ -4,7 +4,7 @@
 
 [![MPLv2 License](https://img.shields.io/badge/license-MPLv2-blue.svg?style=flat-square)](https://www.mozilla.org/MPL/2.0/)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/88/badge)](https://bestpractices.coreinfrastructure.org/projects/88)
-[![Go Report Card](https://goreportcard.com/badge/github.com/syncthing/syncthing)](https://goreportcard.com/report/github.com/syncthing/syncthing)
+[![Go Report Card](https://goreportcard.com/badge/github.com/weeniemount/syncthing)](https://goreportcard.com/report/github.com/weeniemount/syncthing)
 
 ## Goals
 
@@ -96,15 +96,15 @@ All code is licensed under the [MPLv2 License][7].
 
 [1]: https://docs.syncthing.net/specs/bep-v1.html
 [2]: https://docs.syncthing.net/intro/getting-started.html
-[3]: https://github.com/syncthing/syncthing/blob/main/etc
+[3]: https://github.com/weeniemount/syncthing/blob/main/etc
 [5]: https://docs.syncthing.net/dev/building.html
 [6]: https://docs.syncthing.net/
-[7]: https://github.com/syncthing/syncthing/blob/main/LICENSE
+[7]: https://github.com/weeniemount/syncthing/blob/main/LICENSE
 [8]: https://forum.syncthing.net/
-[10]: https://github.com/syncthing/syncthing/issues
+[10]: https://github.com/weeniemount/syncthing/issues
 [11]: https://docs.syncthing.net/users/contrib.html#gui-wrappers
-[13]: https://github.com/syncthing/syncthing/blob/main/GOALS.md
+[13]: https://github.com/weeniemount/syncthing/blob/main/GOALS.md
 [14]: assets/logo-text-128.png
 [15]: https://syncthing.net/
-[16]: https://github.com/syncthing/syncthing/blob/main/README-Docker.md
+[16]: https://github.com/weeniemount/syncthing/blob/main/README-Docker.md
 [17]: https://github.com/syncthing/docs

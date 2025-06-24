@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/gen/bep"
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/internal/gen/bep"
+	"github.com/weeniemount/syncthing/lib/build"
 )
 
 type FlagLocal uint32

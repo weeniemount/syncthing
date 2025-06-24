@@ -9,7 +9,7 @@ package ignore
 import (
 	"time"
 
-	"github.com/syncthing/syncthing/lib/ignore/ignoreresult"
+	"github.com/weeniemount/syncthing/lib/ignore/ignoreresult"
 )
 
 type nower interface {

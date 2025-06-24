@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/api/auto"
-	"github.com/syncthing/syncthing/lib/assets"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/api/auto"
+	"github.com/weeniemount/syncthing/lib/assets"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 const themePrefix = "theme-assets/"

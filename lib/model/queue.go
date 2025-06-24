@@ -9,7 +9,7 @@ package model
 import (
 	"time"
 
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 type jobQueue struct {

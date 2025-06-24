@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/ignore/ignoreresult"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/ignore/ignoreresult"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type XattrFilter interface {

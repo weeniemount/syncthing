@@ -10,7 +10,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func TestFileInfoBatchError(t *testing.T) {

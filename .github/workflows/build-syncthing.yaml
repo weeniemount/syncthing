@@ -856,7 +856,7 @@ jobs:
               gh release create "$VERSION" \
                 $maybePrerelease \
                 --title "$VERSION" \
-                --notes "https://github.com/syncthing/syncthing/releases/tag/$VERSION"
+                --notes "https://github.com/weeniemount/syncthing/releases/tag/$VERSION"
             fi
             gh release upload --clobber "$VERSION" \
               $PKGS/*.asc \

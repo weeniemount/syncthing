@@ -15,7 +15,7 @@ import (
 	"os"
 	"time"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
 )
 
 type event struct {

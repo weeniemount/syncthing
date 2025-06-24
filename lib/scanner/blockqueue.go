@@ -10,9 +10,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 // HashFile hashes the files and returns a list of blocks representing the file.

@@ -21,14 +21,14 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/thejerf/suture/v4"
 
-	"github.com/syncthing/syncthing/internal/blob"
-	"github.com/syncthing/syncthing/internal/blob/azureblob"
-	"github.com/syncthing/syncthing/internal/blob/s3"
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/tlsutil"
+	"github.com/weeniemount/syncthing/internal/blob"
+	"github.com/weeniemount/syncthing/internal/blob/azureblob"
+	"github.com/weeniemount/syncthing/internal/blob/s3"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/tlsutil"
 )
 
 const (

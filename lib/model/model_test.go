@@ -25,20 +25,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/db"
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/ignore"
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/protocol"
-	protocolmocks "github.com/syncthing/syncthing/lib/protocol/mocks"
-	srand "github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/semaphore"
-	"github.com/syncthing/syncthing/lib/testutil"
-	"github.com/syncthing/syncthing/lib/versioner"
+	"github.com/weeniemount/syncthing/internal/db"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/ignore"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	protocolmocks "github.com/weeniemount/syncthing/lib/protocol/mocks"
+	srand "github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/semaphore"
+	"github.com/weeniemount/syncthing/lib/testutil"
+	"github.com/weeniemount/syncthing/lib/versioner"
 )
 
 func newState(t testing.TB, cfg config.Configuration) (*testModel, context.CancelFunc) {
@@ -896,8 +896,8 @@ func TestIssue4897(t *testing.T) {
 // TestIssue5063 is about a panic in connection with modifying config in quick
 // succession, related with auto accepted folders. It's unclear what exactly, a
 // relevant bit seems to be here:
-// PR-comments: https://github.com/syncthing/syncthing/pull/5069/files#r203146546
-// Issue: https://github.com/syncthing/syncthing/pull/5509
+// PR-comments: https://github.com/weeniemount/syncthing/pull/5069/files#r203146546
+// Issue: https://github.com/weeniemount/syncthing/pull/5509
 func TestIssue5063(t *testing.T) {
 	m, cancel := newState(t, defaultAutoAcceptCfg)
 	defer cleanupModel(m)
@@ -3583,7 +3583,7 @@ func testConfigChangeTriggersClusterConfigs(t *testing.T, expectFirst, expectSec
 // The end result of the tested scenario is that the global version entry has an
 // empty version vector and is not deleted, while everything is actually deleted.
 // That then causes these files to be considered as needed, while they are not.
-// https://github.com/syncthing/syncthing/issues/6961
+// https://github.com/weeniemount/syncthing/issues/6961
 func TestIssue6961(t *testing.T) {
 	wcfg, fcfg, wcfgCancel := newDefaultCfgWrapper()
 	defer wcfgCancel()

@@ -13,11 +13,11 @@ import (
 	"slices"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/syncthing/syncthing/internal/gen/dbproto"
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/sliceutil"
+	"github.com/weeniemount/syncthing/internal/gen/dbproto"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/sliceutil"
 	"google.golang.org/protobuf/proto"
 )
 

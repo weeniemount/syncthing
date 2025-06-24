@@ -16,7 +16,7 @@ import (
 	"os"
 	"path/filepath"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
 )
 
 func main() {

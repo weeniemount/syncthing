@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/locations"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/locations"
+	"github.com/weeniemount/syncthing/lib/protocol"
 	"golang.org/x/exp/constraints"
 )
 

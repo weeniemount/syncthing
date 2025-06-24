@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/svcutil"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/svcutil"
 	"github.com/thejerf/suture/v4"
 )
 

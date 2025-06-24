@@ -9,7 +9,7 @@ package ignoreresult_test
 import (
 	"testing"
 
-	"github.com/syncthing/syncthing/lib/ignore/ignoreresult"
+	"github.com/weeniemount/syncthing/lib/ignore/ignoreresult"
 )
 
 func TestFlagCanSkipDir(t *testing.T) {

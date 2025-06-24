@@ -13,9 +13,9 @@ import (
 	"net"
 	"testing"
 
-	"github.com/syncthing/syncthing/internal/gen/discoproto"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/internal/gen/discoproto"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 func TestLocalInstanceID(t *testing.T) {

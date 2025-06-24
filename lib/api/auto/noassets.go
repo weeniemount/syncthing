@@ -13,7 +13,7 @@ import (
 	"bytes"
 	"compress/gzip"
 
-	"github.com/syncthing/syncthing/lib/assets"
+	"github.com/weeniemount/syncthing/lib/assets"
 )
 
 func Assets() map[string]assets.Asset {

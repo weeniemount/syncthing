@@ -13,7 +13,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/build"
 )
 
 func openURL(url string) error {

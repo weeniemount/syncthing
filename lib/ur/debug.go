@@ -7,7 +7,7 @@
 package ur
 
 import (
-	"github.com/syncthing/syncthing/lib/logger"
+	"github.com/weeniemount/syncthing/lib/logger"
 )
 
 var l = logger.DefaultLogger.NewFacility("ur", "Usage reporting")

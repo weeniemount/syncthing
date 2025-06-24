@@ -20,7 +20,7 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/syncthing/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/rand"
 )
 
 // GenerateKeys returns a new key pair, with the private and public key

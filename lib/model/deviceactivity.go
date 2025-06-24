@@ -7,8 +7,8 @@
 package model
 
 import (
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 // deviceActivity tracks the number of outstanding requests per device and can

@@ -4,5 +4,5 @@ contact_links:
     url: https://forum.syncthing.net/
     about: Ask questions, get support, and discuss with other community members.
   - name: Android issues
-    url: https://github.com/syncthing/syncthing-android/issues/
+    url: https://github.com/weeniemount/syncthing-android/issues/
     about: The Android app has its own issue tracker.

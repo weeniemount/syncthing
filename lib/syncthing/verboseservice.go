@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/model"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/model"
 )
 
 // The verbose logging service subscribes to events and prints these in

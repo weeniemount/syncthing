@@ -19,9 +19,9 @@ import (
 	lz4 "github.com/pierrec/lz4/v4"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/syncthing/syncthing/internal/gen/bep"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/testutil"
+	"github.com/weeniemount/syncthing/internal/gen/bep"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/testutil"
 )
 
 var (
@@ -93,7 +93,7 @@ func TestClose(t *testing.T) {
 
 // TestCloseOnBlockingSend checks that the connection does not deadlock when
 // Close is called while the underlying connection is broken (send blocks).
-// https://github.com/syncthing/syncthing/pull/5442
+// https://github.com/weeniemount/syncthing/pull/5442
 func TestCloseOnBlockingSend(t *testing.T) {
 	oldCloseTimeout := CloseTimeout
 	CloseTimeout = 100 * time.Millisecond

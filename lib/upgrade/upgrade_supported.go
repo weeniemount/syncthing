@@ -28,9 +28,9 @@ import (
 	"time"
 
 	"github.com/shirou/gopsutil/v4/host"
-	"github.com/syncthing/syncthing/lib/dialer"
-	"github.com/syncthing/syncthing/lib/signature"
-	"github.com/syncthing/syncthing/lib/tlsutil"
+	"github.com/weeniemount/syncthing/lib/dialer"
+	"github.com/weeniemount/syncthing/lib/signature"
+	"github.com/weeniemount/syncthing/lib/tlsutil"
 	"golang.org/x/net/http2"
 )
 

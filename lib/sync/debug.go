@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/logger"
+	"github.com/weeniemount/syncthing/lib/logger"
 )
 
 var (

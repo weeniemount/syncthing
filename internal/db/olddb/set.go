@@ -13,8 +13,8 @@
 package olddb
 
 import (
-	"github.com/syncthing/syncthing/lib/osutil"
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type deprecatedFileSet struct {

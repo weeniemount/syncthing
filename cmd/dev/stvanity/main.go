@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	_ "github.com/syncthing/syncthing/lib/automaxprocs"
-	"github.com/syncthing/syncthing/lib/protocol"
+	_ "github.com/weeniemount/syncthing/lib/automaxprocs"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type result struct {

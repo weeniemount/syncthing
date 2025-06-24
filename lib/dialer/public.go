@@ -13,7 +13,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/connections/registry"
+	"github.com/weeniemount/syncthing/lib/connections/registry"
 	"golang.org/x/net/ipv4"
 	"golang.org/x/net/ipv6"
 	"golang.org/x/net/proxy"

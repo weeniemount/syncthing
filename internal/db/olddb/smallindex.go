@@ -10,8 +10,8 @@ import (
 	"encoding/binary"
 	"slices"
 
-	"github.com/syncthing/syncthing/internal/db/olddb/backend"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/internal/db/olddb/backend"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 // A smallIndex is an in memory bidirectional []byte to uint32 map. It gives

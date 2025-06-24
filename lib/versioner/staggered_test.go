@@ -16,7 +16,7 @@ import (
 
 	"github.com/d4l3k/messagediff"
 
-	"github.com/syncthing/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/config"
 )
 
 func TestStaggeredVersioningVersionCount(t *testing.T) {

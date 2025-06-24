@@ -16,10 +16,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/netutil"
-	"github.com/syncthing/syncthing/lib/upgrade"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/netutil"
+	"github.com/weeniemount/syncthing/lib/upgrade"
 )
 
 // migrations is the set of config migration functions, with their target

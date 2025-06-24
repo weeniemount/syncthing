@@ -30,8 +30,8 @@ import (
 	lz4 "github.com/pierrec/lz4/v4"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/syncthing/syncthing/internal/gen/bep"
-	"github.com/syncthing/syncthing/internal/protoutil"
+	"github.com/weeniemount/syncthing/internal/gen/bep"
+	"github.com/weeniemount/syncthing/internal/protoutil"
 )
 
 const (

@@ -7,7 +7,7 @@
 package config
 
 import (
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 )
 
 type Compression int32

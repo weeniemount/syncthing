@@ -13,7 +13,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/syncthing/syncthing/internal/gen/bep"
+	"github.com/weeniemount/syncthing/internal/gen/bep"
 )
 
 const (

@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/relay/protocol"
-	"github.com/syncthing/syncthing/lib/svcutil"
+	"github.com/weeniemount/syncthing/lib/relay/protocol"
+	"github.com/weeniemount/syncthing/lib/svcutil"
 
 	"github.com/thejerf/suture/v4"
 )

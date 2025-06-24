@@ -20,15 +20,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/syncthing/syncthing/internal/itererr"
-	"github.com/syncthing/syncthing/lib/build"
-	"github.com/syncthing/syncthing/lib/config"
-	"github.com/syncthing/syncthing/lib/events"
-	"github.com/syncthing/syncthing/lib/fs"
-	"github.com/syncthing/syncthing/lib/ignore"
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/scanner"
-	"github.com/syncthing/syncthing/lib/sync"
+	"github.com/weeniemount/syncthing/internal/itererr"
+	"github.com/weeniemount/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/events"
+	"github.com/weeniemount/syncthing/lib/fs"
+	"github.com/weeniemount/syncthing/lib/ignore"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/scanner"
+	"github.com/weeniemount/syncthing/lib/sync"
 )
 
 var blocks = []protocol.BlockInfo{
@@ -896,7 +896,7 @@ func TestDeleteBehindSymlink(t *testing.T) {
 	}
 }
 
-// Reproduces https://github.com/syncthing/syncthing/issues/6559
+// Reproduces https://github.com/weeniemount/syncthing/issues/6559
 func TestPullCtxCancel(t *testing.T) {
 	_, f, wcfgCancel := setupSendReceiveFolder(t)
 	defer wcfgCancel()

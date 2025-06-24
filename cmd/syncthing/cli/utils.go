@@ -16,7 +16,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/syncthing/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/config"
 )
 
 func responseToBArray(response *http.Response) ([]byte, error) {

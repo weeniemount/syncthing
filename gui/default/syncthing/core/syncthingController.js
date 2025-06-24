@@ -1709,7 +1709,7 @@ angular.module('syncthing.core')
             // Use "$scope.saveConfig().then" when hiding modals after saving
             // changes, or otherwise the background modal will be hidden before
             // the #savingChanges modal, causing the right body margin increase
-            // bug (see https://github.com/syncthing/syncthing/pull/9078).
+            // bug (see https://github.com/weeniemount/syncthing/pull/9078).
             var timeout = setTimeout(function () {
                 // Only block the UI when there is a significant delay.
                 showModal('#savingChanges');

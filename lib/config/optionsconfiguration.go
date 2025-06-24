@@ -13,10 +13,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/rand"
-	"github.com/syncthing/syncthing/lib/stringutil"
-	"github.com/syncthing/syncthing/lib/structutil"
+	"github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/rand"
+	"github.com/weeniemount/syncthing/lib/stringutil"
+	"github.com/weeniemount/syncthing/lib/structutil"
 )
 
 type OptionsConfiguration struct {

@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/syncthing/syncthing/lib/dialer"
-	"github.com/syncthing/syncthing/lib/osutil"
-	syncthingprotocol "github.com/syncthing/syncthing/lib/protocol"
-	"github.com/syncthing/syncthing/lib/relay/protocol"
+	"github.com/weeniemount/syncthing/lib/dialer"
+	"github.com/weeniemount/syncthing/lib/osutil"
+	syncthingprotocol "github.com/weeniemount/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/relay/protocol"
 )
 
 type incorrectResponseCodeErr struct {

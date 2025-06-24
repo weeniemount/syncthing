@@ -5,7 +5,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/syncthing/syncthing/lib/connections"
+	"github.com/weeniemount/syncthing/lib/connections"
 )
 
 type Service struct {

@@ -7,7 +7,7 @@
 package api
 
 import (
-	"github.com/syncthing/syncthing/lib/config/mocks"
+	"github.com/weeniemount/syncthing/lib/config/mocks"
 )
 
 func newMockedConfig() *mocks.Wrapper {

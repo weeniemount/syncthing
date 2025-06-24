@@ -7,7 +7,7 @@
 package model
 
 import (
-	"github.com/syncthing/syncthing/lib/protocol"
+	"github.com/weeniemount/syncthing/lib/protocol"
 	"google.golang.org/protobuf/proto"
 )
 

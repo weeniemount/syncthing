@@ -14,7 +14,7 @@ import (
 	"github.com/alecthomas/kong"
 	"github.com/kballard/go-shellquote"
 
-	"github.com/syncthing/syncthing/lib/config"
+	"github.com/weeniemount/syncthing/lib/config"
 )
 
 type CLI struct {

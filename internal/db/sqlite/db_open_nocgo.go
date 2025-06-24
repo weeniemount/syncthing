@@ -9,7 +9,7 @@
 package sqlite
 
 import (
-	"github.com/syncthing/syncthing/lib/build"
+	"github.com/weeniemount/syncthing/lib/build"
 	_ "modernc.org/sqlite" // register sqlite database driver
 )
 
